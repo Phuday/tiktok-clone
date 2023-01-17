@@ -1,0 +1,141 @@
+.wrapper {
+  margin-right: 16px;
+  margin-left: 16px;
+  max-width: 100%;
+  padding: 24px 0;
+  position: relative;
+}
+
+.video {
+  max-width: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0px;
+    right: 0;
+    background: rgba(22, 24, 35, 0.12);
+    transform: scaleY(0.5);
+    bottom: 0px;
+  }
+}
+
+.account {
+  display: flex;
+  margin-bottom: -10px;
+  .avatar {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .info {
+    margin-left: 10px;
+    flex: 1;
+  }
+}
+
+.name {
+  display: flex;
+  .nick-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 4px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+    line-height: 28px;
+  }
+}
+
+.follow {
+  .btn {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: rgba(254, 44, 85, 1);
+    border-color: rgba(254, 44, 85, 1);
+    background-color: rgba(255, 255, 255, 1);
+    min-width: 106px;
+    min-height: 28px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+    right: 0;
+    top: 28px;
+    min-width: 88px;
+    padding: 0 10px;
+
+    &:hover {
+      background-color: rgba(254, 44, 85, 0.06);
+    }
+  }
+}
+
+.content {
+  margin-top: 20px;
+  margin-left: 66px;
+  display: flex;
+  position: relative;
+  height: 600px;
+  .interaction {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 20px;
+    position: absolute;
+    left: 340px;
+    bottom: 10px;
+
+    button {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      font-size: 0px;
+      border-radius: 50%;
+      transition: all ease-in-out 200ms;
+      background-color: rgba(22, 24, 35, 0.06);
+      margin-top: 14px;
+      margin-bottom: 18px;
+      outline: none;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(22, 24, 35, 0.1);
+      }
+      span {
+        width: 24px;
+        height: 24px;
+        font-size: 2rem;
+      }
+
+      p {
+        color: rgba(22, 24, 35, 0.75);
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        position: absolute;
+        bottom: -22px;
+        font-weight: 600;
+      }
+    }
+  }
+}
